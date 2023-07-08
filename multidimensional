@@ -1,0 +1,56 @@
+//multi dimensional array in java
+//package MultidimensionalArray;
+public class BalamSai{
+    public static void main(String args[]){
+     int rows=5;
+     int cols=3;
+     int arr[][]=new int [rows][cols];//array creation expression
+
+     for(int i=0;i<arr.length;i++)//5->for rows
+     {
+      for(int j=0;j<arr[0].length;j++)//j->cols
+      {
+        System.out.println(arr[i][j]+" ");
+      }
+      System.out.println();//leaving fine as one row printing completed here
+     }
+     //array initializers list
+     //we want to create the following array;
+     //1 2 3
+     //4 5 6
+     //7 8 9 
+     int arr2[][] ={
+        (1,2,3,),(4,5,6),(7,8,9)}
+        for(int i=0;i<arr2.length;i++){
+            for(int j=0;j<arr2[0].length;j++)
+            {
+                System.out.println(arr2[i][j]+" ");
+            }
+        }System.out.println();//leaving fine as one row printing completed here
+     }
+    }
+//jagged arrays
+//columns  are created 
+int arr[][]=new int [rows][];
+//create new class called jagged arrays
+public class JaggedArrays{
+    public static void main(String args[]){
+        int arr[][] =new int [][];
+        arr[0]=new int[3];
+        arr[1]=new int [2];
+        arr[2]=new int [3];
+        //printing jagged array properly 
+        //all rows in separate lines;
+    
+    
+        for(int i=0;i<arr.length;i++)//rows
+        {
+            for(int j=0;j<arr[i].length;j++)//columns
+            {
+                System.out.println(arr[i][j]+" ");
+            }
+            System.out.println();
+    
+    
+    }
+}
